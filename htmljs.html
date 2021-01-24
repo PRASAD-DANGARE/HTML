@@ -1,0 +1,59 @@
+<!--
+
+Description    :  Creating Webpage Using JavaScript With HTML
+Program Date   :  24 Jan 2021
+Program Author :  Prasad Dangare
+Program Output :  It Display The Webpage To Change The Background Colour   
+
+-->
+
+
+<html lang = "en">
+
+    <head>
+
+        <meta charset = "utf-8">
+        <title>Change the Background Color with JavaScript</title>
+
+        <script>
+            setInterval("document.bgColor = 'lightpink'", 1000)
+            setInterval("document.bgColor = 'orange'", 1500)
+            setInterval("document.bgColor = 'yellow'", 2000)
+            setInterval("document.bgColor =  'blue'", 2500)
+            setInterval("document.bgColor = 'red'", 3000)
+            setInterval("document.bgColor = 'tomato'", 3500)
+            setInterval("document.bgColor = 'purple'", 4000)
+
+            function changeBodyBg(color)
+            {
+                document.body.style.background = color;
+            }
+
+            function changeHeadingBg(color)
+            {
+                document.getElementById("heading").style.background = color;
+            }
+        </script>
+    </head>
+
+    <body>
+        <center> <h1 id = "heading"> TCS </h1>
+        <p>Hinjewadi Pune.</p>
+        
+        <hr>
+        <div>
+            <label> Change Full Background Color : </label>
+            <button type = "button" onclick = "changeBodyBg('pink');"> pink </button>
+            <button type = "button" onclick = "changeBodyBg('orange');"> Orange </button>
+            <button type = "button" onclick = "changeBodyBg('red');"> Red </button>
+        </div>
+
+        <br>
+        <div>
+            <label> Change TCS Title Background Color : </label>
+            <button type = "button" onclick = "changeHeadingBg('blue');"> Blue </button>
+            <button type = "button" onclick = "changeHeadingBg('green');"> Green </button>
+            <button type = "button" onclick = "changeHeadingBg('yellow');"> Yellow </button>
+        </div>
+    </body>
+</html>
