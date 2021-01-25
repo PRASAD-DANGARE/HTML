@@ -1,0 +1,47 @@
+<!--
+
+Description    :  To Check Whether The Number Is Palindrome Or Not 
+Program Date   :  25 Jan 2021
+Program Author :  Prasad Dangare
+Program Output :  Display The Palindrome Number 
+
+-->
+
+<html>
+	<head>
+		<script>
+			function Palindrome()
+			{
+				var rem, temp, final = 0;
+				var number = Number(document.getElementById("N").value);
+
+				temp = number;
+				while(number>0)
+				{
+					rem = number%10;
+					number = parseInt(number/10);
+					final = final*10+rem;
+				}
+				
+                if(final==temp)
+				{
+					window.alert("The inputed number is Palindrome");
+				}
+				
+                else
+				{
+					window.alert("The inputted number is not palindrome");
+				}
+			}
+		</script>
+	</head>
+	
+    <body>
+
+		<h3> Check The Palindrome Number </h3>
+		Enter The Number : <input type = "text" name = "n" id = "N"/><br><br>
+		<button onClick="Palindrome()">CHECK</button>
+	
+    </body>
+
+</html>
