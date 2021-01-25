@@ -1,0 +1,51 @@
+<!--
+
+Description    :  Creating Webpage To Reverse The String From User 
+Program Date   :  25 Jan 2021
+Program Author :  Prasad Dangare
+Program Output :  Display The Webpage For Reverse A String
+
+-->
+
+<html>
+
+    <head>
+        <title>Reverse A String</title>
+    </head>
+
+    <body>
+        <script type = "text/javascript">
+            function reverse_string() 
+            {
+                input = document.getElementById("inputText").value;
+                    if(input == '') // for getting input from user 
+                    {
+                        document.getElementById("reveser_string_result").innerHTML = '';
+                        document.getElementById("result").innerHTML = "Please Enter a Valid Text ";
+                        return;
+                    }
+                    let reverse_String = "";
+                    document.getElementById("result").innerHTML = '';
+                    
+                    for ( var i = input.length -1; i >= 0; i--) // using for loop
+                    {
+                        reverse_String = reverse_String + input[i];
+                    }
+                    document.getElementById("result");
+                    document.getElementById("reveser_string_result").innerHTML = "Reverse String Is : " + reverse_String; //display the string
+            }
+        </script>
+
+        <div class = "results"> <!-- Display The Console With Text To User -->
+            <h2> Enter The String To Be Reverse</h2>
+            Input : <input type = "text" name = "inputText" id = "inputText" required>
+            <br><br> <button type = "button" onclick = "reverse_string()" > Submit </button>
+
+            <div class = "resultText">
+                <p id = "reveser_string_result"> </p>
+                <p id = "result"> </p>
+            </div>
+        </div>
+
+    </body>
+</html>
