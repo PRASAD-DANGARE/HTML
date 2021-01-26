@@ -1,0 +1,39 @@
+<!--
+
+Description    :  Display The Cube Of A Given Number
+Program Date   :  26 Jan 2021
+Program Author :  Prasad Dangare
+Program Output :  Display The Webpage 
+
+-->
+
+<html>
+
+    <head>
+        <title>Cube Of A Number</title>
+    </head>
+
+    <body>
+        <table>
+            <tr>
+                <td> <input type = "text" name = "a" id = "first" placeholder = "Enter A Number"> </td>
+            </tr>
+
+            <tr>
+                <td> <button onclick = "cube()"> Submit </button> </td>
+            </tr>
+        </table>
+
+        <div id = "num1"></div>
+    </body>
+
+    <script type = "text/javascript">
+        function cube()
+        {
+            var a, Cube;
+            a = parseInt(document.getElementById ("first").value);
+            Cube = a*a*a;
+            document.getElementById ("num1").innerHTML ="Cube Of "+a+" Is : " +Cube;
+        }
+    </script>
+</html>
