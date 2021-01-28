@@ -1,0 +1,65 @@
+<!--
+
+Description    :  Creating Webpage In HTML
+Program Date   :  28 Jan 2021
+Program Author :  Prasad Dangare
+Program Output :  Display Current Time With dd,mm,yy  
+
+-->
+
+<html lang = "en">
+
+    <head>
+        <meta charset = "utf-8">
+        <title>time,dd,mm,yy</title>
+    </head>
+
+    <body>
+
+        <script type = "text/javascript"> 
+            
+            var myDate = new Date(); 
+            var myDay = myDate.getDay(); 
+         
+            var weekday = 
+            [
+                'Sunday', 'Monday', 'Tuesday', 
+                'Wednesday', 'Thursday', 'Friday', 'Saturday' 
+            ]; 
+            
+            document.write("Today Is : " + weekday[myDay]);
+            document.write("<br/><br/>"); 
+         
+            var hours = myDate.getHours(); 
+            var ampm = hours >= 12 ? 'PM' : 'AM'; 
+            
+            hours = hours % 12; 
+            hours = hours ? hours : 12; 
+            
+            var minutes = myDate.getMinutes(); 
+            minutes = minutes < 10 ? '0' + minutes : minutes; 
+            
+            var myTime = hours + " " + ampm + " : " + minutes +  
+            " : " + myDate.getMilliseconds(); 
+            
+            document.write("\tCurrent Time Is : " + myTime); 
+
+        </script> <br><br>
+
+        <script>    
+            
+            var d = new Date();
+     
+            var date = d.getDate();
+            
+            var month = d.getMonth() + 1;
+            
+            var year = d.getFullYear();
+     
+            var dateStr = date + "/" + month + "/" + year;
+            
+            document.write(dateStr);
+        
+        </script>
+    </body>
+</html>  
