@@ -1,0 +1,85 @@
+<!--
+
+Description    :  Creating Webpage In HTML
+Program Date   :  28 Jan 2021
+Program Author :  Prasad Dangare
+Program Output :  Display The Online Booking For Air-India
+
+-->
+
+<html>
+
+    <head>
+        <title>Online Booking</title>
+    </head>
+
+    <body>
+
+        <center> <h2> Air-India </h2> </center>
+        
+        <form>
+            <fieldset>
+                
+                <legend></legend>
+                <center> <h2> Booking Information </h2> </center>
+
+                <label> <h3> From : </h3> </label> 
+                <input type = "text" name = "f" id = "a" required = "required"> <br> </h3>
+                
+                <label> <h3> To : </h3> </label> 
+                <input type = "text" name = "t" id = "b" required = "required"> <br>
+                
+                <label> <h3> Departure Date : </h3> </label>
+                <input type = "text" name = "d" id = "c" required = "required"> <br>
+                
+                <label> <h3> Returning Date : </h3> </label>
+                <input type = "text" name = "r" id = "d" required = "required"> <br>
+                
+                <br> <h3> <label for = "c"> Enter No Of Adults : </label> </h3>
+                
+                <select name = "adults" id = "a" required>
+                    <option value = "">None</option>
+                    <option value = "1">1</option>
+                    <option value = "2">2</option>
+                    <option value = "3">3</option>
+                    <option value = "4">4</option>
+                    <option value = "5">5</option>
+                    <option value = "6">6</option>
+                    <option value = "7">7</option>
+                    <option value = "4">8</option>
+                    <option value = "4">9</option>
+                </select>
+
+
+                <br><br> <h3> <label for = "c"> Enter No Of Childrens : </label> </h3>
+                
+                <select name = "children" id = "b" required>
+                    <option value = "">None</option>
+                    <option value = "0">0</option>
+                    <option value = "1">1</option>
+                    <option value = "2">2</option>
+                    <option value = "3">3</option>
+                    <option value = "4">4</option>
+                    <option value = "5">5</option>
+                    <option value = "6">6</option>
+                    <option value = "7">7</option>
+                    <option value = "4">8</option>
+                    <option value = "4">9</option>
+                </select>
+
+                <br><br> <h3> <label for = "c"> Enter The Class : </label> </h3>
+                
+                <select name = "class" id = "d" required>
+                    <option value = "">None</option>
+                    <option value = "1">Economy</option>
+                    <option value = "2">Executive</option>
+                    <option value = "3">First</option>
+                </select>
+                
+                <br><br> <input type = "submit" value = "Book Now">
+                <input type = "reset" value = "reset"> 
+
+            </fieldset>
+        </form>
+    </body>
+</html>
