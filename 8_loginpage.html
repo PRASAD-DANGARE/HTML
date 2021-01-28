@@ -1,0 +1,54 @@
+<!--
+
+Description    :  Creating Webpage In HTML
+Program Date   :  28 Jan 2021
+Program Author :  Prasad Dangare
+Program Output :  Display Login Page For See The Exam Score In 8_marksheet.html
+
+-->
+
+<html>
+
+    <head>
+        <title> Profile Login </title>
+    </head>
+
+        <script>
+        
+            function valid()
+            {
+                if(f1.t1.value == "" || f1.t2.value == "")
+                {
+                    alert("Please Enter The All Feilds");
+                }
+                else
+                {
+                    var s1 = f1.t1.value;
+                    var s2 = f1.t2.value;
+                    if(s1 == s2)
+                    {
+                        alert(" Password Is Valid ");
+                        window.location = "8_marksheet.html";
+                    }
+                    else
+                    {
+                        alert(" Username An Password Is Not Match ");
+                    }
+                }
+            }
+        </script>
+
+    
+    <body>
+        <form name = "f1">
+        
+        <h1> <center> <p style = "color:red;"> Dr. D. Y. Patil Pratistan Society's </p> </h2>
+        
+        <h2> <center> Enter The User Name : <input type = "text" id = "t1"> </h2> </center>
+        
+        <h2> <center> Enter Password Same As Username : <input type = "password" id = "t2"> </h2> </center>
+        
+        <center> <input type  = "button" value = "submit" onclick = "valid()"> </center>
+    </body>
+
+</html>
