@@ -1,0 +1,38 @@
+<!--
+
+Description    :  Creating Webpage In HTML
+Program Date   :  30 Jan 2021
+Program Author :  Prasad Dangare
+Program Output :  Display Student Details In Next Webpage Page
+
+-->
+
+<html>
+
+    <head>
+        <title> Student Details </title>
+        
+        <script>
+            function display()
+            {
+                var a = document.forms["stu"] ["roll"].value;
+                var b = document.forms["stu"] ["nam"].value;
+                var c = document.forms["stu"] ["age"].value;
+                var d = document.forms["stu"] ["mob"].value;
+                var g=+d;
+                document.write(a+ "<br>" +b+ "<br>" +c+ "<br>" +g);
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1 align = "Center"> Student Details </h1>
+    
+            <form name = "stu" method = "post" onsubmit = "display()">
+            <h2> Student Roll No : <input type = "text" name = "roll"> </input> <br> </h2>
+            <h2> Student Name : <input type = "text" name = "nam"> </input> <br> </h2>
+            <h2> Student Age : <input type = "text" name = "age"> </input> <br> </h2>
+            <h2> Student Mobile No : <input type = "tel" name = "mob"> </input> <br> </h2>
+            <input type = "Submit" value = "Submit"> </input>
+    </body>
+</html>
