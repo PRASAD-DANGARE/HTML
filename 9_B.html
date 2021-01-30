@@ -1,0 +1,42 @@
+<!--
+
+Description    :  Creating Pay Role Slip In HTML
+Program Date   :  30 Jan 2021
+Program Author :  Prasad Dangare
+Program Output :  Display The Pay Slip Info In Next Page 
+
+-->
+
+<html>
+
+    <head>
+        <title> Pay Role Slip </title>
+        
+        <script>
+            function display()
+            {
+                var a = document.forms["pay"] ["emp"].value;
+                var b = document.forms["pay"] ["dept"].value;
+                var c = document.forms["pay"] ["des"].value;
+                var d = document.forms["pay"] ["bs"].value;
+                var e = document.forms["pay"] ["hra"].value;
+                var f = document.forms["pay"] ["da"].value;
+                var g=+d+ +e+ +f;
+                document.write(a+ "<br>" +b+ "<br>" +c+ "<br>" +g);
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1 align = "Center"> PAYSLIP </h1>
+    
+            <form name = "pay" method = "post" onsubmit = "display()">
+            <h2> Name Of Employee : <input type = "text" name = "emp"> </input> <br> </h2>
+            <h2> Department : <input type = "text" name = "dept"> </input> <br> </h2>
+            <h2> Designation : <input type = "text" name = "des"> </input> <br> </h2>
+            <h2> Basic Salary : <input type = "text" name = "bs"> </input> <br> </h2>
+            <h2> HRA : <input type = "text" name = "hra"> </input> <br> </h2>
+            <h2> DA : <input type = "text" name = "da"> </input> <br> </h2>
+            <input type = "Submit" value = "Submit"> </input>
+    </body>
+</html>
